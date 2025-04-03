@@ -1,5 +1,8 @@
 {
   "preset": "psr12",
   "linesBetweenClassConstants": 1,
-  "linesBetweenMethods": 1
+  "linesBetweenMethods": 1,
+  "exclude": [
+    "var"
+  ]
 }
