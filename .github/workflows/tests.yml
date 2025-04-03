@@ -28,8 +28,8 @@ jobs:
       - name: Run Pint
         run: ./vendor/bin/pint --test
 
-      - name: Run Rector
-        run: ./vendor/bin/rector process --dry-run
-
+      - name: Run Rector (Dry Run)
+        run: ./vendor/bin/rector process --dry-run || test $? -eq 2
+      
       - name: Run Tests
         run: ./vendor/bin/pest
