@@ -1,0 +1,4 @@
+parameters:
+    level: 6
+    paths:
+        - add_two_numbers.php
